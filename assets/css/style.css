@@ -1,0 +1,69 @@
+img{
+    width: 350px !important;
+    position: absolute;
+}
+
+body{
+    background-color: greenyellow !important;
+}
+
+.title{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 80px;
+    color: white;
+    font-style: italic;
+}
+
+.Gamer{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+    color: white;
+    font-style: italic;
+}
+
+.test{
+ height: 45vh;
+}
+
+.apparition_left  {
+    animation: slide_to_the_left 2s ease-in-out;
+  }
+  @keyframes slide_to_the_left {
+    from {
+      left: -25vw;
+    }
+    to {
+      left: 10vw;
+    }
+  }
+
+  .apparition_right  {
+    animation: slide_to_the_right 2s ease-in-out;
+  }
+  @keyframes slide_to_the_right {
+    from {
+        right: -25vw;
+    }
+    to {
+        right: 10vw;
+    }
+  }
+
+
+  .apparition_result  {
+    animation: theWinnerIs 3s forwards;
+    left: 50%;
+    width: 180px !important;
+  }
+
+  @keyframes theWinnerIs {
+    0% {
+        transform: translatex(-50%) scale(0);
+    }
+    50% {
+        transform: translatex(-50%) scale(0);
+    }
+    100% {
+        transform: translatex(-50%) scale(1);
+    }
+}
